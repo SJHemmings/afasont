@@ -153,10 +153,10 @@ bowtie2-build ${WORK_DIR1}/3.Canu/${ISOLATE}_canu_assembly.contigs.fasta ${WORK_
 bowtie2 -x ${WORK_DIR1}/4.Polish/bt2_index/${ISOLATE} -1 ${WORK_DIR1}/2.Short_read_filter/filtered_fastq/${ISOLATE}_short1.fastq.gz -2 ${WORK_DIR1}/2.Short_read_filter/filtered_fastq/${ISOLATE}_short2.fastq.gz | \
 samtools view -b -f 0x2 -o ${WORK_DIR1}/4.Polish/bt2_index/${ISOLATE}.bam - #align short reads to ONT assembly & make bam
 
-samtools sort -o ${WORK_DIR1}/4.Polish/bt2_index/${ISOLATE}.sort.bam ${WORK_DIR1}/4.Polish/bt2_index/${ISOLATE}.bam #sort bam
+samtools sort -o ${WORK_DIR1}/4.Polish/bt2_index/${ISOLATE}.sort.bam ${WORK_DIR1}/4.Polish/bt2_index/${ISOLATE}.bam 
 #sort bam
 
-samtools index -b ${WORK_DIR1}/4.Polish/bt2_index/${ISOLATE}.sort.bam #index bam
+samtools index -b ${WORK_DIR1}/4.Polish/bt2_index/${ISOLATE}.sort.bam 
 #index bam
 
 java -Xmx120G -jar ${CONDA}/envs/polish/share/pilon-1.24-0/pilon.jar --genome ${WORK_DIR1}/3.Canu/${ISOLATE}_canu_assembly.contigs.fasta --bam ${WORK_DIR1}/4.Polish/bt2_index/${ISOLATE}.sort.bam --output ${ISOLATE}.pilon --outdir ${WORK_DIR1}/4.Polish/pilon
