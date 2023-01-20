@@ -1,0 +1,29 @@
+#Author: Samuel J Hemmings
+#Email:  s.hemmings@imperial.ac.uk
+#Repo:   https://github.com/SJHemmings/afasont
+#Cite:
+
+Welcome to the afasont pipeline
+
+afasont is a pipeline written in a bash script that can be used to make de novo genome assemblies from long read fastq 
+files, sequenced using Oxford Nanopore Technologies. These assemblies will then be polished using paired end short read 
+fastq files. The pipeline will then provide you with statistics on the quality of your assembly, number of genes and 
+predicted completeness.
+
+The packages run by afasont are: nanofilt; nanoplot; nanolyse; porechop; fastqc; cutadapt; canu; bowtie2; samtools; 
+pilon; quast; augustus; trnascan-se & busco.
+
+Please be aware that this pipeline was originally written to assemble Aspergillus fumigatus genomes (~29mbp) in a conda 
+environment on a HPC with a PBS queueing system. However, it should also be able to handle other small 
+genomes with a small amount of editing, please let me know if you try!
+
+Things you need to do to run the script:
+
+(o) Download run_afasont.sh and place the script in a directory you are happy to run it from.
+(o) Give the script premission to run with chmod u+x run_afasont.sh
+(o) Open the run_afasont.sh with your prefered text editor and change the variables so they are paths to your 
+short read fastq files, long read fastq folder, your conda directory and a working directory that you want the 
+results to be placed in.  
+(o) Run script.
+(o) At the end 5 directories will be made under the name of your sample that contain: 1.Long_read_filter; 
+2.Short_read_filter; 3.Canu; 4.Polish (which contains your final assembly); 5.Genome_stats.
