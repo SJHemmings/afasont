@@ -1,7 +1,6 @@
 # afasont
 
 Author: Samuel J Hemmings <br>
-Email:  s.hemmings@imperial.ac.uk <br>
 Repo:   https://github.com/SJHemmings/afasont <br>
 Cite:
 
