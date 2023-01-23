@@ -27,7 +27,7 @@ genomes with a small amount of editing, please let me know if you try!
 ```
 chmod u+x run_afasont.sh
 ```
-* Open the run_afasont.sh with your prefered text editor and change the variables so they are paths to your 
+* Open the run_afasont.sh file with your prefered text editor and change the variables so they are paths to your 
 short read fastq files, long read fastq folder, your conda directory and a working directory that you want the 
 results to be placed in.  
 * Run script.
