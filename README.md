@@ -31,5 +31,5 @@ chmod u+x run_afasont.sh
 short read fastq files, long read fastq folder, your conda directory and a working directory that you want the 
 results to be placed in.  
 * Run script.
-* At the end 5 directories will be made under the name of your sample that contain: 1.Long_read_filter; 
+* Once the run is completed, 5 directories will be made under the name of your sample which contain: 1.Long_read_filter; 
 2.Short_read_filter; 3.Canu; 4.Polish (which contains your final assembly); 5.Genome_stats.
