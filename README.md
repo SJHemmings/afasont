@@ -13,8 +13,8 @@ assemblies will then be polished using paired end short read fastq files. The pi
 on the quality of your assembly, number of genes and predicted completeness.
 
 ### The packages run by afasont are: 
-nanofilt; nanoplot; nanolyse; porechop; fastqc; cutadapt; canu; bowtie2; samtools; 
-pilon; quast; augustus; trnascan-se & busco.
+porechop -> nanolyse -> nanofilt -> nanoplot -> fastqc -> cutadapt -> canu -> bowtie2 -> samtools -> 
+pilon -> quast -> augustus -> trnascan-se -> busco
 
 Please be aware that this pipeline was originally written to assemble *A. fumigatus* genomes (~29Mbp) in a conda 
 environment on a HPC with a PBS queueing system. However, it should also be able to handle other small 
