@@ -135,7 +135,8 @@ cutadapt -a ${ADAPT2} -o ${WORK_DIR1}/2.Short_read_filter/filtered_fastq/${ISOLA
 canu -d ${WORK_DIR1}/3.Canu -p ${ISOLATE}_canu_assembly \
         gridOptions="-lselect=1:ncpus=32:mem=64gb -lwalltime=10:00:00" \
         genomeSize=29m -nanopore ${WORK_DIR1}/1.Long_read_filter/${ISOLATE}_high_qual_reads.fastq.gz
-#canu makes first assembly
+#Canu makes first assembly
+#Change genome size to be approximate size of your fungal genome
 
 until [ -e ${WORK_DIR1}/3.Canu/${ISOLATE}_canu_assembly.contigs.fasta ]
 do
