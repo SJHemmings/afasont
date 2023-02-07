@@ -18,7 +18,7 @@ pilon -> quast -> augustus -> trnascan-se -> busco
 
 Please be aware that this pipeline was originally written to assemble *A. fumigatus* genomes (~29Mbp) in a conda 
 environment on a HPC with a PBS queueing system. However, it should also be able to handle other small 
-genomes with a small amount of editing, please let me know if you try!
+genomes with a small amount of editing, let me know if you try!
 
 ### Things you need to do to run the script:
 
