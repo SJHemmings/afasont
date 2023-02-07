@@ -4,7 +4,7 @@
 #PBS -l walltime=24:00:00
 
 #Author: Samuel J Hemmings
-#Email:  s.hemmings[at]imperial[dot]ac[dot]uk
+#Email:  s.hemmings@imperial.ac.uk
 #Repo:   https://github.com/SJHemmings/afasont
 #Cite:
 
