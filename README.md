@@ -22,7 +22,7 @@ genomes with a small amount of editing, let me know if you try!
 
 ### Things you need to do to run the script:
 
-* Download run_afasont.sh and place the script in a directory you are happy to run it from.
+* Download or git clone run_afasont.sh and place the script in a directory you are happy to run it from.
 * Give the script premission to run with 
 ```
 chmod u+x run_afasont.sh
