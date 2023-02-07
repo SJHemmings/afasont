@@ -31,5 +31,25 @@ chmod u+x run_afasont.sh
 short read fastq files, long read fastq folder, your conda directory and a working directory that you want the 
 results to be placed in.  
 * Run script.
-* Once the run is completed, 5 directories will be made under the name of your sample which contain: 1.Long_read_filter; 
-2.Short_read_filter; 3.Canu; 4.Polish (which contains your final assembly); 5.Genome_stats.
+* Once the run is completed, 5 directories will be made under the name of your sample which contain: 
+```
+Nanopore_de_novo_assemblies
+|-- Isolate1
+   |-- 1.Long_read_filter
+   |   |-- Isolate1_high_qual_reads.fastq.gz
+   |   `-- NanoPlot
+   |-- 2.Short_read_filter
+   |   |-- fastQC
+   |   `-- filtered_fastq
+   |-- 3.Canu
+   |   
+   |-- 4.Polish
+   |   |-- bt2_index
+   |   `-- pilon #Contains final assembly
+   `-- 5.Genome_stats
+       |-- augustus
+       |-- busco
+       |-- quast
+       `-- trnascan 
+```
+
