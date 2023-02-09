@@ -9,7 +9,7 @@ Cite:
 
 afasont (*Aspergillus fumigatus* assembly for Oxford Nanopore Technologies) is a pipeline written in a bash script that can 
 be used to make *de novo* genome assemblies from long read fastq files, sequenced using Oxford Nanopore Technologies. These 
-assemblies will then be polished using paired end short read fastq files. The pipeline will then provide you with statistics 
+assemblies will then be polished using Illumina paired end reads. The pipeline will then provide you with statistics 
 on the quality of your assembly, number of genes and predicted completeness.
 
 ### The packages run by afasont are: 
