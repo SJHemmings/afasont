@@ -15,14 +15,14 @@
 
 WORK_DIR=/The/location/of/your/work/dir/to/put/results #Path to working directory, where you would like the assemblies to be made
 ISOLATE=Example #Name of the isolate to be assembled
-CONDA=/rds/general/user/.../home/anaconda3 #Path to conda directory
+CONDA=/user/.../home/anaconda3 #Path to conda directory
 
-EPH=/The/Location/of/your/longread/fastq/pass/ephemeral/or/folder/that/can/be/deleted #Location for ephermal/intermediate files that can be late deleted
+EPH=/The/location/of/your/ephemeral/location/or/folder/that/can/be/deleted #Location for ephermal/intermediate files that can be late deleted
 
 LONGREAD_DIR=/The/Location/of/your/longread/fastq/pass/folder #Path to Raw ONT data
 
 PATH_SHORTREAD1=/The/Locaction/of/your/first/shortread/.fastq.gz #Path to 1st Illumina fastq
-PATH_SHORTREAD2=/The/Locaction/of/your/second/shortread/.fastq.gz/2.fastq.gz #Path to 2nd Illumina fastq
+PATH_SHORTREAD2=/The/Locaction/of/your/second/shortread/_2.fastq.gz #Path to 2nd Illumina fastq
 
 
 
