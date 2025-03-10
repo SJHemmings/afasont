@@ -6,7 +6,7 @@
 #Author: Samuel J Hemmings
 #Email:  s.hemmings@imperial.ac.uk
 #Repo:   https://github.com/SJHemmings/afasont
-#Cite:
+#Cite: Hemmings, S.J., Rhodes, J.L. and Fisher, M.C., 2023. Long-read Sequencing and de novo Genome Assembly of Three Aspergillus fumigatus Genomes. Mycopathologia, 188(4), pp.409-412.
 
 ##########################################
 ## Please Edit the Variables List Below ##
